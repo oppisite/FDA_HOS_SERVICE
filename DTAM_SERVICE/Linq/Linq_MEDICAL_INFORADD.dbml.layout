@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 36.125" name="Linq_MEDICAL_RECORD">
+  <DataContextMoniker Name="/Linq_MEDICAL_RECORDDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2f5f1c06-dafd-40c9-ac1d-fa7d0167da26" absoluteBounds="0.625, 5.875, 2, 6.5784326171875">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_VALIDATE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f7890c28-3460-478f-8385-e56b6f0e5436" absoluteBounds="0.64000000000000012, 6.335, 1.9700000000000002, 6.0184326171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c9a25113-cf36-4050-a8a2-6489ebe85c70" absoluteBounds="4.125, 9.5, 2, 26.385480143229167">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_INFORMATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c50abe38-abd8-4500-aea1-8ac5b779c53f" absoluteBounds="4.14, 9.96, 1.9700000000000002, 25.825480143229164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
