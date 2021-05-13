@@ -73,7 +73,11 @@ Namespace Controllers
 
         '    End Try
         'End Function
-
+        Public Function GET_DATA_SET_PAGE_SUB_MAIN(ByVal Type As Integer) As Object
+            Dim dao As New DAO_PAGE.TB_SET_PAGE_SUB_MAIN
+            dao.GETDATA_ALL(Type)
+            Return dao.Details
+        End Function
         Private Function CODE_CENTER(ByVal MODEL_APP As MODEL_APP) As MODEL_APP
             Dim CORE_FUNC As New CORE_FUNC
             'Dim Hpost As New CLS_H_POST
@@ -86,6 +90,10 @@ Namespace Controllers
                 Dim ar As Array = MODEL_APP.FUNC_CODE.Split(",")
                 For i = 0 To ar.Length - 1
                     Select Case ar(i)
+
+            '''''''''''''''''''''''''''''''''''''''''''''''' GET_MED  ''''''''''''''''''''''''''''''''''''''''''''''
+                        Case "FUNC-GETDATA-MED_MAIN-1"
+                            MODEL_APP.SET_SUB_PAGE_MAIN = GET_DATA_SET_PAGE_SUB_MAIN(1)
             '''''''''''''''''''''''''''''''''''''''''''''''' GET_OUTPATIENT  ''''''''''''''''''''''''''''''''''''''''''''''
                         Case "FUNC-OUTPATIENT-001-1"
                             MODEL_APP.List_MAS_HELPDOC = CORE_FUNC.GET_MAS_HELPDOC(MODEL_APP)

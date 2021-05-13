@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DTAM_TIHI" Class="Linq_SET_PAGEDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=61.19.252.49;Initial Catalog=DTAM_TIHI;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DTAM_TIHIConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SET_PAGE_SUB_MAIN" Member="SET_PAGE_SUB_MAINs">
+    <Type Name="SET_PAGE_SUB_MAIN">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_PAGE_MAIN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TYPE_PEOPLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PROCESS_WEIGHT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PAGE_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PAGE_TYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PAGE_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PAGE_PATH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ICON_PATH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVEFACT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SET_PAGE_MAIN" Member="SET_PAGE_MAINs">
+    <Type Name="SET_PAGE_MAIN">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TYPE_PEOPLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PROCESS_WEIGHT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PAGE_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PAGE_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PAGE_PATH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ICON_PATH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVEFACT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
