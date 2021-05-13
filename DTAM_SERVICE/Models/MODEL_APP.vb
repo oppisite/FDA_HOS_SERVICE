@@ -550,6 +550,83 @@
             _List_MEDICAL_RECORDS_VALIDATE = value
         End Set
     End Property
+
+    Private _MEDICAL_RECORDS_HISTORY_ALLERGIC As New MEDICAL_RECORDS_HISTORY_ALLERGIC
+    Public Property MEDICAL_RECORDS_HISTORY_ALLERGIC() As MEDICAL_RECORDS_HISTORY_ALLERGIC
+        Get
+            Return _MEDICAL_RECORDS_HISTORY_ALLERGIC
+        End Get
+        Set(ByVal value As MEDICAL_RECORDS_HISTORY_ALLERGIC)
+            _MEDICAL_RECORDS_HISTORY_ALLERGIC = value
+        End Set
+    End Property
+    Private _List_MEDICAL_RECORDS_HISTORY_ALLERGIC As List(Of MEDICAL_RECORDS_HISTORY_ALLERGIC)
+    Public Property List_MEDICAL_RECORDS_HISTORY_ALLERGIC() As List(Of MEDICAL_RECORDS_HISTORY_ALLERGIC)
+        Get
+            Return _List_MEDICAL_RECORDS_HISTORY_ALLERGIC
+        End Get
+        Set(ByVal value As List(Of MEDICAL_RECORDS_HISTORY_ALLERGIC))
+            _List_MEDICAL_RECORDS_HISTORY_ALLERGIC = value
+        End Set
+    End Property
+
+    Private _MEDICAL_RECORDS_REPLACE_NAME_DRUG As New MEDICAL_RECORDS_REPLACE_NAME_DRUG
+    Public Property MEDICAL_RECORDS_REPLACE_NAME_DRUG() As MEDICAL_RECORDS_REPLACE_NAME_DRUG
+        Get
+            Return _MEDICAL_RECORDS_REPLACE_NAME_DRUG
+        End Get
+        Set(ByVal value As MEDICAL_RECORDS_REPLACE_NAME_DRUG)
+            _MEDICAL_RECORDS_REPLACE_NAME_DRUG = value
+        End Set
+    End Property
+    Private _List_MEDICAL_RECORDS_REPLACE_NAME_DRUG As List(Of MEDICAL_RECORDS_REPLACE_NAME_DRUG)
+    Public Property List_MEDICAL_RECORDS_REPLACE_NAME_DRUG() As List(Of MEDICAL_RECORDS_REPLACE_NAME_DRUG)
+        Get
+            Return _List_MEDICAL_RECORDS_REPLACE_NAME_DRUG
+        End Get
+        Set(ByVal value As List(Of MEDICAL_RECORDS_REPLACE_NAME_DRUG))
+            _List_MEDICAL_RECORDS_REPLACE_NAME_DRUG = value
+        End Set
+    End Property
+
+    Private _MEDICAL_RECORDS_CHANGE_NAME As New MEDICAL_RECORDS_CHANGE_NAME
+    Public Property MEDICAL_RECORDS_CHANGE_NAME() As MEDICAL_RECORDS_CHANGE_NAME
+        Get
+            Return _MEDICAL_RECORDS_CHANGE_NAME
+        End Get
+        Set(ByVal value As MEDICAL_RECORDS_CHANGE_NAME)
+            _MEDICAL_RECORDS_CHANGE_NAME = value
+        End Set
+    End Property
+    Private _List_MEDICAL_RECORDS_CHANGE_NAME As List(Of MEDICAL_RECORDS_CHANGE_NAME)
+    Public Property List_MEDICAL_RECORDS_CHANGE_NAME() As List(Of MEDICAL_RECORDS_CHANGE_NAME)
+        Get
+            Return _List_MEDICAL_RECORDS_CHANGE_NAME
+        End Get
+        Set(ByVal value As List(Of MEDICAL_RECORDS_CHANGE_NAME))
+            _List_MEDICAL_RECORDS_CHANGE_NAME = value
+        End Set
+    End Property
+
+    Private _MEDICAL_RECORDS_MEDIAFILE As New MEDICAL_RECORDS_MEDIAFILE
+    Public Property MEDICAL_RECORDS_MEDIAFILE() As MEDICAL_RECORDS_MEDIAFILE
+        Get
+            Return _MEDICAL_RECORDS_MEDIAFILE
+        End Get
+        Set(ByVal value As MEDICAL_RECORDS_MEDIAFILE)
+            _MEDICAL_RECORDS_MEDIAFILE = value
+        End Set
+    End Property
+    Private _List_MEDICAL_RECORDS_MEDIAFILE As List(Of MEDICAL_RECORDS_MEDIAFILE)
+    Public Property List_MEDICAL_RECORDS_MEDIAFILE() As List(Of MEDICAL_RECORDS_MEDIAFILE)
+        Get
+            Return _List_MEDICAL_RECORDS_MEDIAFILE
+        End Get
+        Set(ByVal value As List(Of MEDICAL_RECORDS_MEDIAFILE))
+            _List_MEDICAL_RECORDS_MEDIAFILE = value
+        End Set
+    End Property
+
 #End Region
 
 End Class

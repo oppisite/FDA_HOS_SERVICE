@@ -1,17 +1,119 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 36.125" name="Linq_MEDICAL_RECORD">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 21, 29" name="Linq_MEDICAL_RECORD">
   <DataContextMoniker Name="/Linq_MEDICAL_RECORDDataContext" />
   <nestedChildShapes>
-    <classShape Id="2f5f1c06-dafd-40c9-ac1d-fa7d0167da26" absoluteBounds="0.625, 5.875, 2, 6.5784326171875">
-      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_VALIDATE" />
+    <classShape Id="b6a147e6-0d31-4eae-b081-c466c94a3ef5" absoluteBounds="0.75, 0.75, 2, 7.3476383463541666">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_CERTIFICATE" />
       <nestedChildShapes>
-        <elementListCompartment Id="f7890c28-3460-478f-8385-e56b6f0e5436" absoluteBounds="0.64000000000000012, 6.335, 1.9700000000000002, 6.0184326171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="64c20d5d-e957-4fdd-9f2e-8188fd5de960" absoluteBounds="0.765, 1.21, 1.9700000000000002, 6.7876383463541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="c9a25113-cf36-4050-a8a2-6489ebe85c70" absoluteBounds="4.125, 9.5, 2, 26.385480143229167">
+    <classShape Id="c6034c8e-aca4-4bb2-b912-54d29090b334" absoluteBounds="3.75, 0.75, 2, 6.5784326171874987">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_VALIDATE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2b52cb3-42c5-4e92-9256-2ddfc7ef6061" absoluteBounds="3.765, 1.21, 1.9700000000000002, 6.0184326171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fc20acc9-b7da-44e7-bf25-1697a634d922" absoluteBounds="6.75, 0.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_CHANGE_NAME" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5b0f43f1-c4ff-4cd4-aded-01ac9912ee45" absoluteBounds="6.765, 1.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dbf0dd98-329d-4650-a7d8-63f666ef86d4" absoluteBounds="6.75, 6.75, 2, 5.4246240234374987">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_CLAIM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="570e274c-ad3d-46e5-9b17-9158fddd083e" absoluteBounds="6.765, 7.21, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="33693515-ec59-421d-b699-68f68288f793" absoluteBounds="9.75, 0.75, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_DEPREDATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6bc9bddd-7487-40b4-ae9f-a23413e9521c" absoluteBounds="9.765, 1.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="79726565-9a92-4f11-8404-145184a6d2de" absoluteBounds="0.75, 9.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_DEPREDATION_DETAIL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="602962d8-83c8-445a-840e-f9ffb7bc4ce7" absoluteBounds="0.765, 10.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5fc6138b-4d23-48a8-a225-52a2a3e85ed8" absoluteBounds="9.75, 6.75, 2, 4.0785139973958318">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_HISTORY_ALLERGIC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9823c0e-8471-423f-ae5d-5eafc469a551" absoluteBounds="9.765, 7.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1e031b3-7b01-48dc-bb80-9b4eb00165e1" absoluteBounds="9.75, 11.75, 2, 4.8477197265624987">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_HN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c708b53-9456-4bc9-a486-298b68c4e738" absoluteBounds="9.765, 12.21, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3477ffa6-b8d7-4cc7-a156-eeb5d6e09f78" absoluteBounds="12.75, 0.75, 2, 26.385480143229167">
       <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_INFORMATION" />
       <nestedChildShapes>
-        <elementListCompartment Id="c50abe38-abd8-4500-aea1-8ac5b779c53f" absoluteBounds="4.14, 9.96, 1.9700000000000002, 25.825480143229164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="7ac7df0c-2a6a-47aa-858c-41c2288409ac" absoluteBounds="12.765, 1.21, 1.9700000000000002, 25.825480143229164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="00549787-7a66-409d-a633-c127c730b72c" absoluteBounds="3.75, 13.75, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_LEND" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0c6ef58-3348-440a-bb93-4bf1e80b02b0" absoluteBounds="3.765, 14.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7c027f3b-fc21-465c-aa96-6d291250ceb5" absoluteBounds="15.75, 0.75, 2, 3.6939111328124992">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_LEND_DETAIL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d774bf85-81cd-4049-aaac-bc9f1a13d22a" absoluteBounds="15.765, 1.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fd5ca127-a631-421d-be87-b74493a8bb2d" absoluteBounds="15.75, 5.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_MEDIA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="08f4edf8-905b-49e7-8ad1-13a40eeef034" absoluteBounds="15.765, 6.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="800a03da-3e3c-47e4-8b0a-5482dc164ffb" absoluteBounds="15.75, 8.75, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_MEDIAFILE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bf4954ac-b4bc-4028-bf0c-650cce7b7022" absoluteBounds="15.765, 9.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9ed8cb07-5444-4136-b626-f463f9eda0a4" absoluteBounds="15.75, 13.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_PAYER_DETAIL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="03f13961-6512-4812-b397-8fa7c2b23057" absoluteBounds="15.765, 14.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7a6f84ec-a7e5-493e-9827-0d9b498aa821" absoluteBounds="6.75, 17.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_QUEUE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3997e84-3182-44d2-8437-ff0f0a906ce4" absoluteBounds="6.765, 18.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="edd275d7-5c57-4373-b9fa-06a3322230aa" absoluteBounds="15.75, 17.75, 2, 11.001365559895831">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_REGISTER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="253f5ebc-4396-4c66-bf89-ebcdf1cc8d52" absoluteBounds="15.765, 18.21, 1.9700000000000002, 10.441365559895832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bbfce84b-1adb-4649-8bbf-ff8e9537e308" absoluteBounds="18.75, 0.75, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_REPLACE_NAME_DRUG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2c8fcdd-612d-4ab7-b5ad-d25460239426" absoluteBounds="18.765, 1.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="063d1a48-ab42-4a6e-9dd7-fdea3d2fc777" absoluteBounds="18.75, 5.75, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_RETURN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0fe17ad4-269c-46e2-90aa-61eeec174767" absoluteBounds="18.765, 6.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fc6a39da-b872-4267-9ede-e655aafdd7a7" absoluteBounds="18.75, 10.75, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/Linq_MEDICAL_RECORDDataContext/MEDICAL_RECORDS_RETURN_DETAIL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8112fd48-3625-48bc-a391-55849387a2b3" absoluteBounds="18.765, 11.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

@@ -1,5 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DTAM_TIHI_MEDICAL_RECORDS" Class="Linq_MEDICAL_RECORDDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=10.0.2.3;Initial Catalog=DTAM_TIHI_MEDICAL_RECORDS;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DTAM_TIHI_MEDICAL_RECORDSConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=61.19.252.49;Initial Catalog=DTAM_TIHI_MEDICAL_RECORDS;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DTAM_TIHI_MEDICAL_RECORDSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.MEDICAL_RECORDS_CERTIFICATE" Member="MEDICAL_RECORDS_CERTIFICATEs">
+    <Type Name="MEDICAL_RECORDS_CERTIFICATE">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_INFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DEATH_NAME_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DEATH_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DEATH_NAME_IDCARD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NO_DEATH_CERTIFICATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DATE_DEATH_CERTIFICATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PATIENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CATEGORY_PLACE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DAY_DEATH" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TIME_DEATH_MUNITE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIME_DEATH_HOUR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PLACE_DEATH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="OPERATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RESULTS_FUNERALl_SURGERY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="APPROVED" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CANCEL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AUTHORITIES_CANCEL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DATE_CANCEL" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EVENT_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EVENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DISEASE_EVENT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CAUSE_INSERT_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CAUSE_INSERT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DISEASE_INSERT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="OLD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DISEASE_OLD" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MILITIA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.MEDICAL_RECORDS_VALIDATE" Member="MEDICAL_RECORDS_VALIDATEs">
     <Type Name="MEDICAL_RECORDS_VALIDATE">
       <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -16,8 +54,8 @@
       <Column Name="HOSPITAL_MAIN" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="HOSPITAL_MAIN_DES" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="HOSPITAL_RESERVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="HOSPITAL_RESERVE_DES" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="MAX_AMOUNT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HOSPITAL_RESERVE_DES" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="AMOUNT_SPENT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="NOT_ACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -32,6 +70,142 @@
       <Column Name="GUID_UPDATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="USER_SERVICEUNIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="USER_INVENTORY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_CHANGE_NAME" Member="MEDICAL_RECORDS_CHANGE_NAMEs">
+    <Type Name="MEDICAL_RECORDS_CHANGE_NAME">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_INFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="C_CHANGEDATE_NAME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C_NAME_OLD" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_TITLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="C_FIRST_NAME" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_LAST_NAME" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_OFFICER_CHANGE_NAME" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="C_NAME_PRESENT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="C_TITLE_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVEFACT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GUID_CREATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GUID_UPDATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="USER_SERVICEUNIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_INVENTORY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_CLAIM" Member="MEDICAL_RECORDS_CLAIMs">
+    <Type Name="MEDICAL_RECORDS_CLAIM">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_INFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_IDA_VALI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLAIM_MAIN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLAIM_RESERVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLAIM_RESERVE2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLAIM_MAIN_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CLAIM_RESERSE_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CLAIM_RESERSE2_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CLAIM_MAIN_AMOUNT" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="CLAIM_RESERVE_AMOUNT" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="CLAIM_RESERVE2_AMOUNT" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="CLAIM_MAIN_BALANCE_AMOUNT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CLAIM_RESERVE_BALANCE_AMOUNT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CLAIM_RESERVE2_BALANCE_AMOUNT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="GUID_CREATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GUID_UPDATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="USER_SERVICEUNIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_INVENTORY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_DEPREDATION" Member="MEDICAL_RECORDS_DEPREDATIONs">
+    <Type Name="MEDICAL_RECORDS_DEPREDATION">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_INFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PATINE_NAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="HN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NO_DESTROY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESTROY_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APPROVERS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="APPROVERS_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ADD_DOCUMENT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="BREAKS" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="BREAK_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CLOSE_DOC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_DEPREDATION_DETAIL" Member="MEDICAL_RECORDS_DEPREDATION_DETAILs">
+    <Type Name="MEDICAL_RECORDS_DEPREDATION_DETAIL">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_INFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_IDA_DEPREDATION" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FILE_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BIT_DESTROY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PATINE_NAME" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="HN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DOCUMENT_NUMBER" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_HISTORY_ALLERGIC" Member="MEDICAL_RECORDS_HISTORY_ALLERGICs">
+    <Type Name="MEDICAL_RECORDS_HISTORY_ALLERGIC">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_INFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ALLERGIC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NAME_DRUG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NOTE" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CONGENITALDISEASE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CONGENITALDISEASE_DETAIL" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVEFACT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DETAIL_ALLERGIC" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GUID_CREATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GUID_UPDATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="USER_SERVICEUNIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_INVENTORY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_HN" Member="MEDICAL_RECORDS_HNs">
+    <Type Name="MEDICAL_RECORDS_HN">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_INFOR_OLD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_IDA_INFOR_NEW" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OLD_HN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OLD_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OLD_SEX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OLD_AGE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OLD_DATE_VISIT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OLD_CLINIC_VISIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AUTHORITIES" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOTE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NEW_HN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NEW_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NEW_SEX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NEW_AGE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NEW_DATE_VISIT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NEW_CLINIC_VISIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.MEDICAL_RECORDS_INFORMATION" Member="MEDICAL_RECORDS_INFORMATIONs">
@@ -169,6 +343,219 @@
       <Column Name="CONGENITALDISEASE" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="CONGENITALDISEASE_DETAIL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="REMARK" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_LEND" Member="MEDICAL_RECORDS_LENDs">
+    <Type Name="MEDICAL_RECORDS_LEND">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_INFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NO_LEND" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DATE_NO_LEND" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NUMBER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CATEGORY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="BORROWER_GUID" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="BORROWER" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="OFFICE_BORROWER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLOSE_LEND" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_LEND_DETAIL" Member="MEDICAL_RECORDS_LEND_DETAILs">
+    <Type Name="MEDICAL_RECORDS_LEND_DETAIL">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_INFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_IDA_LEND" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REGISTER_NUM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PATIENT_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PATIENT_IDCARD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BIT_TYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DOCUMENT_NUMBER" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_MEDIA" Member="MEDICAL_RECORDS_MEDIAs">
+    <Type Name="MEDICAL_RECORDS_MEDIA">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_M_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_DIRECTOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FILE_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DOCTYPE_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NAME_PATH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EXTENTION_FILE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_MEDIAFILE" Member="MEDICAL_RECORDS_MEDIAFILEs">
+    <Type Name="MEDICAL_RECORDS_MEDIAFILE">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FILE_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PATH_FILE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FK_IDA_INFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GUID_CREATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GUID_UPDATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="USER_SERVICEUNIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_INVENTORY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_PAYER_DETAIL" Member="MEDICAL_RECORDS_PAYER_DETAILs">
+    <Type Name="MEDICAL_RECORDS_PAYER_DETAIL">
+      <Column Name="PAYER_DETAIL_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_REGISTER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PAYER_DETAIL_MCPAYER_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ACTIVEFLAG" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_BY" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GUID_CREATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GUID_UPDATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="USER_SERVICEUNIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_INVENTORY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_QUEUE" Member="MEDICAL_RECORDS_QUEUEs">
+    <Type Name="MEDICAL_RECORDS_QUEUE">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_Register" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="QUEUE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CALL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="QUEUE_PRINT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="QUEUE_TYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QUEUE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_REGISTER" Member="MEDICAL_RECORDS_REGISTERs">
+    <Type Name="MEDICAL_RECORDS_REGISTER">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_INFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLINIC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DURATION" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DURATION_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PHYSICIAN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SYMPTOM" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="REGISTER_POINT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="REGISTRATION" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="REGISTRATION_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="REGISTRATION_IDCARD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DATE_REGISTER" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DATE_CLINIC" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DATE_START" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CLAIM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLAIM_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CLAIM_TYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLAIM_MONEY" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="NOTE" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="OFFICE_ADD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="VNNUMBER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CNNUMBER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VN_CN_YEAR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DATE_VN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DATE_CN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CALL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="QUEUE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QUEUE_PRT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="STATUS_FINANCE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLAIM_OLD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLAIM_OLD_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CLAIM_OLD_TYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLAIM_OLD_MONEY" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CLAIM_AMOUNT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="FK_MAS_TYPE_SERV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MAS_TYPE_SERV_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FK_MAS_TYPE_IN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MAS_TYPE_IN_TEXT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MAS_TYPE_IN_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GUID_CREATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GUID_UPDATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="USER_SERVICEUNIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_INVENTORY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CN_RUN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_REPLACE_NAME_DRUG" Member="MEDICAL_RECORDS_REPLACE_NAME_DRUGs">
+    <Type Name="MEDICAL_RECORDS_REPLACE_NAME_DRUG">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_INFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="R_TITLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="R_FIRST_NAME" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="R_LAST_NAME" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="R_RERATION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="R_TITLE_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="R_RERATION_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GUID_CREATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GUID_UPDATE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="USER_SERVICEUNIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_INVENTORY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_RETURN" Member="MEDICAL_RECORDS_RETURNs">
+    <Type Name="MEDICAL_RECORDS_RETURN">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_INFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NO_RETURN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DATE_NO_RETURN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NUMBER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CATEGORY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="BORROWER" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="BORROWER_GUID" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="OFFICE_BORROWER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLOSE_RETURN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICAL_RECORDS_RETURN_DETAIL" Member="MEDICAL_RECORDS_RETURN_DETAILs">
+    <Type Name="MEDICAL_RECORDS_RETURN_DETAIL">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_INFOR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_IDA_RETURN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="REGISTER_NUM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PATIENT_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PATIENT_IDCARD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CREATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CREATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UPDATE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UPDATE_USER" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DOCUMENT_NUMBER" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ACTIVE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
     </Type>
   </Table>
 </Database>
