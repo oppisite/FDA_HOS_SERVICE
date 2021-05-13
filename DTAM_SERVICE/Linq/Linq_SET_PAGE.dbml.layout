@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Linq_SET_PAGE">
+  <DataContextMoniker Name="/Linq_SET_PAGEDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6c8cd6e9-7ed1-46d8-b905-eb5f4ef91199" absoluteBounds="0.75, 0.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/Linq_SET_PAGEDataContext/SET_PAGE_SUB_MAIN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d1d4c0a-7577-4d74-b060-8bc0cd539543" absoluteBounds="0.765, 1.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d4949ea-7893-4863-a2aa-9d8dc72e31b5" absoluteBounds="3.75, 0.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/Linq_SET_PAGEDataContext/SET_PAGE_MAIN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="502165b4-ca6d-4e20-a90e-74cb19f3fe23" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

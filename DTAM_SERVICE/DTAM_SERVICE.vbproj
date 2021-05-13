@@ -188,6 +188,7 @@
     <Compile Include="Class\CLASS_CORE_FUNC\CORE_FUNC.vb" />
     <Compile Include="Class\DAO\DAO_MASTER.vb" />
     <Compile Include="Class\DAO\DAO_MEDICAL_RECORD.vb" />
+    <Compile Include="Class\DAO\DAO_PAGE.vb" />
     <Compile Include="Controllers\GATE_WAYController.vb" />
     <Compile Include="Controllers\GET_DATAController.vb" />
     <Compile Include="Global.asax.vb">
@@ -202,6 +203,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Linq_MEDICAL_INFORADD.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Linq\Linq_SET_PAGE.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Linq_SET_PAGE.dbml</DependentUpon>
     </Compile>
     <Compile Include="Models\MODEL_APP.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -259,6 +265,14 @@
     </Content>
     <None Include="Linq\Linq_MEDICAL_INFORADD.dbml.layout">
       <DependentUpon>Linq_MEDICAL_INFORADD.dbml</DependentUpon>
+    </None>
+    <Content Include="Linq\Linq_SET_PAGE.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Linq_SET_PAGE.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Linq\Linq_SET_PAGE.dbml.layout">
+      <DependentUpon>Linq_SET_PAGE.dbml</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
