@@ -605,4 +605,410 @@
         End Sub
 
     End Class
+    Public Class TB_MAS_PATIENTGROUPRANK
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_PATIENTGROUPRANK
+
+        Private _Details As New List(Of MAS_PATIENTGROUPRANK)
+        Public Property Details() As List(Of MAS_PATIENTGROUPRANK)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_PATIENTGROUPRANK))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_PATIENTGROUPRANK
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_PATIENTGROUPRANKs Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_PRENAME
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_PRENAME
+
+        Private _Details As New List(Of MAS_PRENAME)
+        Public Property Details() As List(Of MAS_PRENAME)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_PRENAME))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_PRENAME
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_PRENAMEs Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_SEX
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_SEX
+
+        Private _Details As New List(Of MAS_SEX)
+        Public Property Details() As List(Of MAS_SEX)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_SEX))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_SEX
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_SEXes Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_PATIENTGROUP
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_PATIENTGROUP
+
+        Private _Details As New List(Of MAS_PATIENTGROUP)
+        Public Property Details() As List(Of MAS_PATIENTGROUP)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_PATIENTGROUP))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_PATIENTGROUP
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_PATIENTGROUPs Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_CHINESEYEAR
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_CHINESEYEAR
+
+        Private _Details As New List(Of MAS_CHINESEYEAR)
+        Public Property Details() As List(Of MAS_CHINESEYEAR)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_CHINESEYEAR))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_CHINESEYEAR
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_CHINESEYEARs Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_ABOGROUP
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_ABOGROUP
+
+        Private _Details As New List(Of MAS_ABOGROUP)
+        Public Property Details() As List(Of MAS_ABOGROUP)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_ABOGROUP))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_ABOGROUP
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_ABOGROUPs Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_RHGROUP
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_RHGROUP
+
+        Private _Details As New List(Of MAS_RHGROUP)
+        Public Property Details() As List(Of MAS_RHGROUP)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_RHGROUP))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_RHGROUP
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_RHGROUPs Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_ELEMENTAL
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_ELEMENTAL
+
+        Private _Details As New List(Of MAS_ELEMENTAL)
+        Public Property Details() As List(Of MAS_ELEMENTAL)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_ELEMENTAL))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_ELEMENTAL
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_ELEMENTALs Where p.ELEMENTAL_ISUSE = 1 Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_RACE
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_RACE
+
+        Private _Details As New List(Of MAS_RACE)
+        Public Property Details() As List(Of MAS_RACE)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_RACE))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_RACE
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_RACEs Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_RELIGION
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_RELIGION
+
+        Private _Details As New List(Of MAS_RELIGION)
+        Public Property Details() As List(Of MAS_RELIGION)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_RELIGION))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_RELIGION
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_RELIGIONs Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_OCCUPATION
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_OCCUPATION
+
+        Private _Details As New List(Of MAS_OCCUPATION)
+        Public Property Details() As List(Of MAS_OCCUPATION)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_OCCUPATION))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_OCCUPATION
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_OCCUPATIONs Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_EDUCATIONLEVEL
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_EDUCATIONLEVEL
+
+        Private _Details As New List(Of MAS_EDUCATIONLEVEL)
+        Public Property Details() As List(Of MAS_EDUCATIONLEVEL)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_EDUCATIONLEVEL))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_EDUCATIONLEVEL
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_EDUCATIONLEVELs Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_VSTATUS
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_VSTATUS
+
+        Private _Details As New List(Of MAS_VSTATUS)
+        Public Property Details() As List(Of MAS_VSTATUS)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_VSTATUS))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_VSTATUS
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_VSTATUS Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_STATUS
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_STATUS
+
+        Private _Details As New List(Of MAS_STATUS)
+        Public Property Details() As List(Of MAS_STATUS)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_STATUS))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_STATUS
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_STATUS Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MAS_RELATIONSHIP
+        Inherits MAINCONTEXT1
+        Public fields As New MAS_RELATIONSHIP
+
+        Private _Details As New List(Of MAS_RELATIONSHIP)
+        Public Property Details() As List(Of MAS_RELATIONSHIP)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MAS_RELATIONSHIP))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MAS_RELATIONSHIP
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmas.MAS_RELATIONSHIPs Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+    End Class
+
 End Namespace

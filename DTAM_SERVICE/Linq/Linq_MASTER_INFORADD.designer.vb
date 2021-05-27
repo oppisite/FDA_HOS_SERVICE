@@ -1816,8 +1816,8 @@ Partial Public Class Linq_MASTERDataContext
   #End Region
 	
 	Public Sub New()
-		MyBase.New(Global.System.Configuration.ConfigurationManager.ConnectionStrings("DTAM_TIHIConnectionString1").ConnectionString, mappingSource)
-		OnCreated
+		MyBase.New(Global.System.Configuration.ConfigurationManager.ConnectionStrings("DTAM_TIHIConnectionString").ConnectionString, mappingSource)
+		OnCreated()
 	End Sub
 	
 	Public Sub New(ByVal connection As String)

@@ -199,6 +199,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Linq_MASTER_INFORADD.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Linq\Linq_MASTER_INFORADD.vb">
+      <DependentUpon>Linq_MASTER_INFORADD.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Linq\Linq_MEDICAL_INFORADD.designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -95,18 +95,21 @@
             dbmedi.MEDICAL_RECORDS_INFORMATIONs.DeleteOnSubmit(fields)
             dbmedi.SubmitChanges()
         End Sub
-
-        Public Sub GETDATA_MEDIINFOR_BY_FK_INFOR(ByVal IDA As Integer)
-            datas = (From p In dbmedi.MEDICAL_RECORDS_INFORMATIONs Where p.ACTIVEFACT = True And p.IDA = IDA Select p)
-            For Each Me.fields In datas
-                'AddDetails()
-            Next
+        Public Sub GETDATA_MEDIINFOR_BY_TYPE_HOSPTIAL(ByVal TYPE_HOSPTIAL As Integer, ByVal ystr As String)
+            datas = (From p In dbmedi.MEDICAL_RECORDS_INFORMATIONs Where p.ACTIVEFACT = True And p.TYPE_HOSPTIAL = TYPE_HOSPTIAL And p.HNYEAR = ystr Select p.HNNUMBER).Max
         End Sub
 
         Public Sub GETDATA_BY_IDA(ByVal IDA As Integer)
             datas = (From p In dbmedi.MEDICAL_RECORDS_INFORMATIONs Where p.ACTIVEFACT = True And p.IDA = IDA Select p)
             For Each Me.fields In datas
                 'AddDetails()
+            Next
+        End Sub
+
+        Public Sub GETDATA_ALL()
+            datas = (From p In dbmedi.MEDICAL_RECORDS_INFORMATIONs Where p.ACTIVEFACT = True Select p Order By p.IDA)
+            For Each Me.fields In datas
+                AddDetails()
             Next
         End Sub
 
@@ -142,15 +145,21 @@
             dbmedi.SubmitChanges()
         End Sub
 
-        Public Sub GETDATA_MEDIINFOR_BY_FK_INFOR(ByVal IDA As Integer)
+
+        Public Sub GETDATA_BY_FK(ByVal FK As Integer)
+            datas = (From p In dbmedi.MEDICAL_RECORDS_REPLACE_NAME_DRUGs Where p.ACTIVE = True And p.FK_IDA_INFOR = FK Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+        Public Sub GETDATA_BY_IDA_ACTIVE(ByVal IDA As Integer)
             datas = (From p In dbmedi.MEDICAL_RECORDS_REPLACE_NAME_DRUGs Where p.ACTIVE = True And p.IDA = IDA Select p)
             For Each Me.fields In datas
                 'AddDetails()
             Next
         End Sub
-
         Public Sub GETDATA_BY_IDA(ByVal IDA As Integer)
-            datas = (From p In dbmedi.MEDICAL_RECORDS_REPLACE_NAME_DRUGs Where p.ACTIVE = True And p.IDA = IDA Select p)
+            datas = (From p In dbmedi.MEDICAL_RECORDS_REPLACE_NAME_DRUGs Where p.IDA = IDA Select p)
             For Each Me.fields In datas
                 'AddDetails()
             Next
@@ -187,15 +196,21 @@
             dbmedi.SubmitChanges()
         End Sub
 
-        Public Sub GETDATA_MEDIINFOR_BY_FK_INFOR(ByVal IDA As Integer)
+        Public Sub GETDATA_MEDIHIST_BY_FK(ByVal FK As Integer)
+            datas = (From p In dbmedi.MEDICAL_RECORDS_HISTORY_ALLERGICs Where p.ACTIVEFACT = True And p.FK_IDA_INFOR = FK Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+        Public Sub GETDATA_BY_IDA_ACTIVE(ByVal IDA As Integer)
             datas = (From p In dbmedi.MEDICAL_RECORDS_HISTORY_ALLERGICs Where p.ACTIVEFACT = True And p.IDA = IDA Select p)
             For Each Me.fields In datas
                 'AddDetails()
             Next
         End Sub
-
         Public Sub GETDATA_BY_IDA(ByVal IDA As Integer)
-            datas = (From p In dbmedi.MEDICAL_RECORDS_HISTORY_ALLERGICs Where p.ACTIVEFACT = True And p.IDA = IDA Select p)
+            datas = (From p In dbmedi.MEDICAL_RECORDS_HISTORY_ALLERGICs Where p.IDA = IDA Select p)
             For Each Me.fields In datas
                 'AddDetails()
             Next
@@ -232,20 +247,25 @@
             dbmedi.SubmitChanges()
         End Sub
 
-        Public Sub GETDATA_MEDIINFOR_BY_FK_INFOR(ByVal IDA As Integer)
+        Public Sub GETDATA_MEDICHAGE_BY_FK_INFOR(ByVal FK As Integer)
+            datas = (From p In dbmedi.MEDICAL_RECORDS_CHANGE_NAMEs Where p.ACTIVEFACT = True And p.FK_IDA_INFOR = FK Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+        Public Sub GETDATA_BY_IDA_ACTIVE(ByVal IDA As Integer)
             datas = (From p In dbmedi.MEDICAL_RECORDS_CHANGE_NAMEs Where p.ACTIVEFACT = True And p.IDA = IDA Select p)
             For Each Me.fields In datas
                 'AddDetails()
             Next
         End Sub
-
         Public Sub GETDATA_BY_IDA(ByVal IDA As Integer)
-            datas = (From p In dbmedi.MEDICAL_RECORDS_CHANGE_NAMEs Where p.ACTIVEFACT = True And p.IDA = IDA Select p)
+            datas = (From p In dbmedi.MEDICAL_RECORDS_CHANGE_NAMEs Where p.IDA = IDA Select p)
             For Each Me.fields In datas
                 'AddDetails()
             Next
         End Sub
-
     End Class
     Public Class TB_MEDICAL_RECORDS_MEDIAFILE
         Inherits MAINCONTEXT2
@@ -286,6 +306,51 @@
 
         Public Sub GETDATA_BY_IDA(ByVal IDA As Integer)
             datas = (From p In dbmedi.MEDICAL_RECORDS_MEDIAFILEs Where p.ACTIVE = True And p.IDA = IDA Select p)
+            For Each Me.fields In datas
+                'AddDetails()
+            Next
+        End Sub
+
+    End Class
+    Public Class TB_MEDICAL_RECORDS_REGISTER
+        Inherits MAINCONTEXT2
+        Public fields As New MEDICAL_RECORDS_REGISTER
+
+        Private _Details As New List(Of MEDICAL_RECORDS_REGISTER)
+        Public Property Details() As List(Of MEDICAL_RECORDS_REGISTER)
+            Get
+                Return _Details
+            End Get
+            Set(ByVal value As List(Of MEDICAL_RECORDS_REGISTER))
+                _Details = value
+            End Set
+        End Property
+
+        Private Sub AddDetails()
+            Details.Add(fields)
+            fields = New MEDICAL_RECORDS_REGISTER
+        End Sub
+        Public Sub insert()
+            dbmedi.MEDICAL_RECORDS_REGISTERs.InsertOnSubmit(fields)
+            dbmedi.SubmitChanges()
+        End Sub
+        Public Sub update()
+            dbmedi.SubmitChanges()
+        End Sub
+        Public Sub delete()
+            dbmedi.MEDICAL_RECORDS_REGISTERs.DeleteOnSubmit(fields)
+            dbmedi.SubmitChanges()
+        End Sub
+
+        Public Sub GETDATA_MEDIREGIS_BY_FK_INFOR(ByVal idInfor As Integer)
+            datas = (From p In dbmedi.MEDICAL_RECORDS_REGISTERs Where p.FK_IDA_INFOR = idInfor And p.ACTIVE = True Select p)
+            For Each Me.fields In datas
+                AddDetails()
+            Next
+        End Sub
+
+        Public Sub GETDATA_BY_IDA(ByVal IDA As Integer)
+            datas = (From p In dbmedi.MEDICAL_RECORDS_REGISTERs Where p.ACTIVE = True And p.IDA = IDA Select p)
             For Each Me.fields In datas
                 'AddDetails()
             Next

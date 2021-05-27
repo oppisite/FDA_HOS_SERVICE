@@ -509,6 +509,277 @@
             _List_MAS_HOUSETYPE = value
         End Set
     End Property
+    Private _MAS_PATIENTGROUPRANK As New MAS_PATIENTGROUPRANK
+    Public Property MAS_PATIENTGROUPRANK() As MAS_PATIENTGROUPRANK
+        Get
+            Return _MAS_PATIENTGROUPRANK
+        End Get
+        Set(ByVal value As MAS_PATIENTGROUPRANK)
+            _MAS_PATIENTGROUPRANK = value
+        End Set
+    End Property
+    Private _List_MAS_PATIENTGROUPRANK As New List(Of MAS_PATIENTGROUPRANK)
+    Public Property List_MAS_PATIENTGROUPRANK() As List(Of MAS_PATIENTGROUPRANK)
+        Get
+            Return _List_MAS_PATIENTGROUPRANK
+        End Get
+        Set(ByVal value As List(Of MAS_PATIENTGROUPRANK))
+            _List_MAS_PATIENTGROUPRANK = value
+        End Set
+    End Property
+    Private _MAS_PRENAME As New MAS_PRENAME
+    Public Property MAS_PRENAME() As MAS_PRENAME
+        Get
+            Return _MAS_PRENAME
+        End Get
+        Set(ByVal value As MAS_PRENAME)
+            _MAS_PRENAME = value
+        End Set
+    End Property
+    Private _List_MAS_PRENAME As New List(Of MAS_PRENAME)
+    Public Property List_MAS_PRENAME() As List(Of MAS_PRENAME)
+        Get
+            Return _List_MAS_PRENAME
+        End Get
+        Set(ByVal value As List(Of MAS_PRENAME))
+            _List_MAS_PRENAME = value
+        End Set
+    End Property
+    Private _MAS_SEX As New MAS_SEX
+    Public Property MAS_SEX() As MAS_SEX
+        Get
+            Return _MAS_SEX
+        End Get
+        Set(ByVal value As MAS_SEX)
+            _MAS_SEX = value
+        End Set
+    End Property
+    Private _List_MAS_SEX As New List(Of MAS_SEX)
+    Public Property List_MAS_SEX() As List(Of MAS_SEX)
+        Get
+            Return _List_MAS_SEX
+        End Get
+        Set(ByVal value As List(Of MAS_SEX))
+            _List_MAS_SEX = value
+        End Set
+    End Property
+    Private _MAS_PATIENTGROUP As New MAS_PATIENTGROUP
+    Public Property MAS_PATIENTGROUP() As MAS_PATIENTGROUP
+        Get
+            Return _MAS_PATIENTGROUP
+        End Get
+        Set(ByVal value As MAS_PATIENTGROUP)
+            _MAS_PATIENTGROUP = value
+        End Set
+    End Property
+    Private _List_MAS_PATIENTGROUP As New List(Of MAS_PATIENTGROUP)
+    Public Property List_MAS_PATIENTGROUP() As List(Of MAS_PATIENTGROUP)
+        Get
+            Return _List_MAS_PATIENTGROUP
+        End Get
+        Set(ByVal value As List(Of MAS_PATIENTGROUP))
+            _List_MAS_PATIENTGROUP = value
+        End Set
+    End Property
+    Private _MAS_CHINESEYEAR As New MAS_CHINESEYEAR
+    Public Property MAS_CHINESEYEAR() As MAS_CHINESEYEAR
+        Get
+            Return _MAS_CHINESEYEAR
+        End Get
+        Set(ByVal value As MAS_CHINESEYEAR)
+            _MAS_CHINESEYEAR = value
+        End Set
+    End Property
+    Private _List_MAS_CHINESEYEAR As New List(Of MAS_CHINESEYEAR)
+    Public Property List_MAS_CHINESEYEAR() As List(Of MAS_CHINESEYEAR)
+        Get
+            Return _List_MAS_CHINESEYEAR
+        End Get
+        Set(ByVal value As List(Of MAS_CHINESEYEAR))
+            _List_MAS_CHINESEYEAR = value
+        End Set
+    End Property
+    Private _MAS_ABOGROUP As New MAS_ABOGROUP
+    Public Property MAS_ABOGROUP() As MAS_ABOGROUP
+        Get
+            Return _MAS_ABOGROUP
+        End Get
+        Set(ByVal value As MAS_ABOGROUP)
+            _MAS_ABOGROUP = value
+        End Set
+    End Property
+    Private _List_MAS_ABOGROUP As New List(Of MAS_ABOGROUP)
+    Public Property List_MAS_ABOGROUP() As List(Of MAS_ABOGROUP)
+        Get
+            Return _List_MAS_ABOGROUP
+        End Get
+        Set(ByVal value As List(Of MAS_ABOGROUP))
+            _List_MAS_ABOGROUP = value
+        End Set
+    End Property
+    Private _MAS_RHGROUP As New MAS_RHGROUP
+    Public Property MAS_RHGROUP() As MAS_RHGROUP
+        Get
+            Return _MAS_RHGROUP
+        End Get
+        Set(ByVal value As MAS_RHGROUP)
+            _MAS_RHGROUP = value
+        End Set
+    End Property
+    Private _List_MAS_RHGROUP As New List(Of MAS_RHGROUP)
+    Public Property List_MAS_RHGROUP() As List(Of MAS_RHGROUP)
+        Get
+            Return _List_MAS_RHGROUP
+        End Get
+        Set(ByVal value As List(Of MAS_RHGROUP))
+            _List_MAS_RHGROUP = value
+        End Set
+    End Property
+    Private _MAS_ELEMENTAL As New MAS_ELEMENTAL
+    Public Property MAS_ELEMENTAL() As MAS_ELEMENTAL
+        Get
+            Return _MAS_ELEMENTAL
+        End Get
+        Set(ByVal value As MAS_ELEMENTAL)
+            _MAS_ELEMENTAL = value
+        End Set
+    End Property
+    Private _List_MAS_ELEMENTAL As New List(Of MAS_ELEMENTAL)
+    Public Property List_MAS_ELEMENTAL() As List(Of MAS_ELEMENTAL)
+        Get
+            Return _List_MAS_ELEMENTAL
+        End Get
+        Set(ByVal value As List(Of MAS_ELEMENTAL))
+            _List_MAS_ELEMENTAL = value
+        End Set
+    End Property
+    Private _MAS_RACE As New MAS_RACE
+    Public Property MAS_RACE() As MAS_RACE
+        Get
+            Return _MAS_RACE
+        End Get
+        Set(ByVal value As MAS_RACE)
+            _MAS_RACE = value
+        End Set
+    End Property
+    Private _List_MAS_RACE As New List(Of MAS_RACE)
+    Public Property List_MAS_RACE() As List(Of MAS_RACE)
+        Get
+            Return _List_MAS_RACE
+        End Get
+        Set(ByVal value As List(Of MAS_RACE))
+            _List_MAS_RACE = value
+        End Set
+    End Property
+    Private _MAS_RELIGION As New MAS_RELIGION
+    Public Property MAS_RELIGION() As MAS_RELIGION
+        Get
+            Return _MAS_RELIGION
+        End Get
+        Set(ByVal value As MAS_RELIGION)
+            _MAS_RELIGION = value
+        End Set
+    End Property
+    Private _List_MAS_RELIGION As New List(Of MAS_RELIGION)
+    Public Property List_MAS_RELIGION() As List(Of MAS_RELIGION)
+        Get
+            Return _List_MAS_RELIGION
+        End Get
+        Set(ByVal value As List(Of MAS_RELIGION))
+            _List_MAS_RELIGION = value
+        End Set
+    End Property
+    Private _MAS_OCCUPATION As New MAS_OCCUPATION
+    Public Property MAS_OCCUPATION() As MAS_OCCUPATION
+        Get
+            Return _MAS_OCCUPATION
+        End Get
+        Set(ByVal value As MAS_OCCUPATION)
+            _MAS_OCCUPATION = value
+        End Set
+    End Property
+    Private _List_MAS_OCCUPATION As New List(Of MAS_OCCUPATION)
+    Public Property List_MAS_OCCUPATION() As List(Of MAS_OCCUPATION)
+        Get
+            Return _List_MAS_OCCUPATION
+        End Get
+        Set(ByVal value As List(Of MAS_OCCUPATION))
+            _List_MAS_OCCUPATION = value
+        End Set
+    End Property
+    Private _MAS_EDUCATIONLEVEL As New MAS_EDUCATIONLEVEL
+    Public Property MAS_EDUCATIONLEVEL() As MAS_EDUCATIONLEVEL
+        Get
+            Return _MAS_EDUCATIONLEVEL
+        End Get
+        Set(ByVal value As MAS_EDUCATIONLEVEL)
+            _MAS_EDUCATIONLEVEL = value
+        End Set
+    End Property
+    Private _List_MAS_EDUCATIONLEVEL As New List(Of MAS_EDUCATIONLEVEL)
+    Public Property List_MAS_EDUCATIONLEVEL() As List(Of MAS_EDUCATIONLEVEL)
+        Get
+            Return _List_MAS_EDUCATIONLEVEL
+        End Get
+        Set(ByVal value As List(Of MAS_EDUCATIONLEVEL))
+            _List_MAS_EDUCATIONLEVEL = value
+        End Set
+    End Property
+    Private _MAS_VSTATUS As New MAS_VSTATUS
+    Public Property MAS_VSTATUS() As MAS_VSTATUS
+        Get
+            Return _MAS_VSTATUS
+        End Get
+        Set(ByVal value As MAS_VSTATUS)
+            _MAS_VSTATUS = value
+        End Set
+    End Property
+    Private _List_MAS_VSTATUS As New List(Of MAS_VSTATUS)
+    Public Property List_MAS_VSTATUS() As List(Of MAS_VSTATUS)
+        Get
+            Return _List_MAS_VSTATUS
+        End Get
+        Set(ByVal value As List(Of MAS_VSTATUS))
+            _List_MAS_VSTATUS = value
+        End Set
+    End Property
+    Private _MAS_STATUS As New MAS_STATUS
+    Public Property MAS_STATUS() As MAS_STATUS
+        Get
+            Return _MAS_STATUS
+        End Get
+        Set(ByVal value As MAS_STATUS)
+            _MAS_STATUS = value
+        End Set
+    End Property
+    Private _List_MAS_STATUS As New List(Of MAS_STATUS)
+    Public Property List_MAS_STATUS() As List(Of MAS_STATUS)
+        Get
+            Return _List_MAS_STATUS
+        End Get
+        Set(ByVal value As List(Of MAS_STATUS))
+            _List_MAS_STATUS = value
+        End Set
+    End Property
+    Private _MAS_RELATIONSHIP As New MAS_RELATIONSHIP
+    Public Property MAS_RELATIONSHIP() As MAS_RELATIONSHIP
+        Get
+            Return _MAS_RELATIONSHIP
+        End Get
+        Set(ByVal value As MAS_RELATIONSHIP)
+            _MAS_RELATIONSHIP = value
+        End Set
+    End Property
+    Private _List_MAS_RELATIONSHIP As New List(Of MAS_RELATIONSHIP)
+    Public Property List_MAS_RELATIONSHIP() As List(Of MAS_RELATIONSHIP)
+        Get
+            Return _List_MAS_RELATIONSHIP
+        End Get
+        Set(ByVal value As List(Of MAS_RELATIONSHIP))
+            _List_MAS_RELATIONSHIP = value
+        End Set
+    End Property
+
 #End Region
 
 #Region "MEDICAL_RECORD"
@@ -522,15 +793,16 @@
             _MEDICAL_RECORDS_INFORMATION = value
         End Set
     End Property
-    Private _List_MEDICAL_RECORDS_INFORMATION As List(Of MEDICAL_RECORDS_INFORMATION)
-    Public Property NewProperty() As List(Of MEDICAL_RECORDS_INFORMATION)
+    Private _List_MEDICAL_RECORDS_INFORMATION As New List(Of MEDICAL_RECORDS_INFORMATION)
+    Public Property List_MEDICAL_RECORDS_INFORMATION() As List(Of MEDICAL_RECORDS_INFORMATION)
         Get
             Return _List_MEDICAL_RECORDS_INFORMATION
         End Get
         Set(ByVal value As List(Of MEDICAL_RECORDS_INFORMATION))
             _List_MEDICAL_RECORDS_INFORMATION = value
         End Set
-    End Property
+        End Property
+
     Private _MEDICAL_RECORDS_VALIDATE As New MEDICAL_RECORDS_VALIDATE
     Public Property MEDICAL_RECORDS_VALIDATE() As MEDICAL_RECORDS_VALIDATE
         Get
@@ -560,7 +832,7 @@
             _MEDICAL_RECORDS_HISTORY_ALLERGIC = value
         End Set
     End Property
-    Private _List_MEDICAL_RECORDS_HISTORY_ALLERGIC As List(Of MEDICAL_RECORDS_HISTORY_ALLERGIC)
+    Private _List_MEDICAL_RECORDS_HISTORY_ALLERGIC As New List(Of MEDICAL_RECORDS_HISTORY_ALLERGIC)
     Public Property List_MEDICAL_RECORDS_HISTORY_ALLERGIC() As List(Of MEDICAL_RECORDS_HISTORY_ALLERGIC)
         Get
             Return _List_MEDICAL_RECORDS_HISTORY_ALLERGIC
@@ -579,7 +851,7 @@
             _MEDICAL_RECORDS_REPLACE_NAME_DRUG = value
         End Set
     End Property
-    Private _List_MEDICAL_RECORDS_REPLACE_NAME_DRUG As List(Of MEDICAL_RECORDS_REPLACE_NAME_DRUG)
+    Private _List_MEDICAL_RECORDS_REPLACE_NAME_DRUG As New List(Of MEDICAL_RECORDS_REPLACE_NAME_DRUG)
     Public Property List_MEDICAL_RECORDS_REPLACE_NAME_DRUG() As List(Of MEDICAL_RECORDS_REPLACE_NAME_DRUG)
         Get
             Return _List_MEDICAL_RECORDS_REPLACE_NAME_DRUG
@@ -598,7 +870,7 @@
             _MEDICAL_RECORDS_CHANGE_NAME = value
         End Set
     End Property
-    Private _List_MEDICAL_RECORDS_CHANGE_NAME As List(Of MEDICAL_RECORDS_CHANGE_NAME)
+    Private _List_MEDICAL_RECORDS_CHANGE_NAME As New List(Of MEDICAL_RECORDS_CHANGE_NAME)
     Public Property List_MEDICAL_RECORDS_CHANGE_NAME() As List(Of MEDICAL_RECORDS_CHANGE_NAME)
         Get
             Return _List_MEDICAL_RECORDS_CHANGE_NAME
@@ -617,7 +889,7 @@
             _MEDICAL_RECORDS_MEDIAFILE = value
         End Set
     End Property
-    Private _List_MEDICAL_RECORDS_MEDIAFILE As List(Of MEDICAL_RECORDS_MEDIAFILE)
+    Private _List_MEDICAL_RECORDS_MEDIAFILE As New List(Of MEDICAL_RECORDS_MEDIAFILE)
     Public Property List_MEDICAL_RECORDS_MEDIAFILE() As List(Of MEDICAL_RECORDS_MEDIAFILE)
         Get
             Return _List_MEDICAL_RECORDS_MEDIAFILE

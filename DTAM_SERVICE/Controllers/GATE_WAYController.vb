@@ -78,6 +78,12 @@ Namespace Controllers
             dao.GETDATA_ALL(Type)
             Return dao.Details
         End Function
+
+        Public Function GET_DATA_DROPDOWN(ByVal Type As Integer) As Object
+            Dim dao As New DAO_PAGE.TB_SET_PAGE_SUB_MAIN
+            dao.GETDATA_ALL(Type)
+            Return dao.Details
+        End Function
         Private Function CODE_CENTER(ByVal MODEL_APP As MODEL_APP) As MODEL_APP
             Dim CORE_FUNC As New CORE_FUNC
             'Dim Hpost As New CLS_H_POST
@@ -94,6 +100,10 @@ Namespace Controllers
             '''''''''''''''''''''''''''''''''''''''''''''''' GET_MED  ''''''''''''''''''''''''''''''''''''''''''''''
                         Case "FUNC-GETDATA-MED_MAIN-1"
                             MODEL_APP.SET_SUB_PAGE_MAIN = GET_DATA_SET_PAGE_SUB_MAIN(1)
+                        Case "FUNC-GETDATA-MED_SUB_MAIN-1"
+                            MODEL_APP.SET_SUB_PAGE_MAIN = GET_DATA_SET_PAGE_SUB_MAIN(1)
+                            MODEL_APP.List_MEDICAL_RECORDS_INFORMATION = CORE_FUNC.GET_DATA_MEDI_INFOR_ALL()
+
             '''''''''''''''''''''''''''''''''''''''''''''''' GET_OUTPATIENT  ''''''''''''''''''''''''''''''''''''''''''''''
                         Case "FUNC-OUTPATIENT-001-1"
                             MODEL_APP.List_MAS_HELPDOC = CORE_FUNC.GET_MAS_HELPDOC(MODEL_APP)
@@ -101,27 +111,49 @@ Namespace Controllers
                             CORE_FUNC.BEFORE_INSERT_MAS_HELPDOC(MODEL_APP)
                             CORE_FUNC.INSERT_MAS_HELPDOC(MODEL_APP)
             '''''''''''''''''''''''''''''''''''''''''''''' GET_INFORADD  ''''''''''''''''''''''''''''''''''''''''''''''
-
                         Case "FUNC-INFOR-001-3"
-                            MODEL_APP.List_MAS_HEAL = CORE_FUNC.GET_DATA_MAS_HEAL(MODEL_APP)
+
                             'MODEL_APP.List_ORGANIZATION = CORE_FUNC.GET_DATA_MAS_ORGANIZATION_HOS(MODEL_APP)
-                            MODEL_APP.List_MAS_MC = CORE_FUNC.GET_DATA_MAS_MC(MODEL_APP)
-                            MODEL_APP.List_MAS_MC_MCPAYERNAME = CORE_FUNC.GET_DATA_MAS_MC_MCPAYERNAME(MODEL_APP)
-                            MODEL_APP.List_MEDICAL_RECORDS_VALIDATE = CORE_FUNC.GET_DATA_MEDI_VALIDATE_BY_IDA(MODEL_APP)
-                            MODEL_APP.List_MAS_TYPEADDRESS = CORE_FUNC.GET_DATA_MAS_TYPEADDRESS(MODEL_APP)
-                            MODEL_APP.List_MAS_PROVINCE = CORE_FUNC.GET_DATA_MAS_PROVINCE(MODEL_APP)
-                            'MODEL_APP.LIST_
+                            'MODEL_APP.List_MAS_HEAL = CORE_FUNC.GET_DATA_MAS_HEAL(MODEL_APP)
+                            'MODEL_APP.List_MAS_MC_MCPAYERNAME = CORE_FUNC.GET_DATA_MAS_MC_MCPAYERNAME(MODEL_APP)
                             MODEL_APP.MEDICAL_RECORDS_INFORMATION = CORE_FUNC.GET_DATA_MEDI_INFOR_BY_IDA(MODEL_APP)
+                            MODEL_APP.List_MEDICAL_RECORDS_VALIDATE = CORE_FUNC.GET_DATA_MEDI_VALIDATE_BY_IDA(MODEL_APP)
+                            MODEL_APP.List_MEDICAL_RECORDS_HISTORY_ALLERGIC = CORE_FUNC.GET_DATA_MEDI_ALLERGIC_BY_FK(MODEL_APP)
+                            MODEL_APP.List_MEDICAL_RECORDS_REPLACE_NAME_DRUG = CORE_FUNC.GET_DATA_MEDIREPL_NAME_BY_FK(MODEL_APP)
+                            MODEL_APP.List_MEDICAL_RECORDS_CHANGE_NAME = CORE_FUNC.GET_DATA_MEDICHAG_NAME_BY_FK(MODEL_APP)
                             MODEL_APP.List_MAS_COUNTRY = CORE_FUNC.GET_DATA_MAS_COUNTRY(MODEL_APP)
                             MODEL_APP.List_MAS_HOUSETYPE = CORE_FUNC.GET_DATA_MAS_HOUSETYPE(MODEL_APP)
+                            MODEL_APP.List_MAS_MC = CORE_FUNC.GET_DATA_MAS_MC(MODEL_APP)
+                            MODEL_APP.List_MAS_TYPEADDRESS = CORE_FUNC.GET_DATA_MAS_TYPEADDRESS(MODEL_APP)
+                            MODEL_APP.List_MAS_PROVINCE = CORE_FUNC.GET_DATA_MAS_PROVINCE(MODEL_APP)
+
+                            MODEL_APP.List_MAS_NATION = CORE_FUNC.GET_DATA_MAS_NATION(MODEL_APP)
+                            MODEL_APP.List_MAS_WAREHOUSE_SUBMAIN = CORE_FUNC.GET_DATA_WAREHOUSE_SUBMAIN(MODEL_APP)
+                            MODEL_APP.List_MAS_PATIENTGROUPRANK = CORE_FUNC.GET_DATA_MAS_PATIENTGROUPRANK(MODEL_APP)
+                            MODEL_APP.List_MAS_PRENAME = CORE_FUNC.GET_DATA_MAS_PRENAME(MODEL_APP)
+                            MODEL_APP.List_MAS_SEX = CORE_FUNC.GET_DATA_MAS_SEX(MODEL_APP)
+                            MODEL_APP.List_MAS_PATIENTGROUP = CORE_FUNC.GET_DATA_MAS_PATIENTGROUP(MODEL_APP)
+                            MODEL_APP.List_MAS_CHINESEYEAR = CORE_FUNC.GET_DATA_MAS_CHINESEYEAR(MODEL_APP)
+                            MODEL_APP.List_MAS_ABOGROUP = CORE_FUNC.GET_DATA_MAS_ABOGROUP(MODEL_APP)
+                            MODEL_APP.List_MAS_RHGROUP = CORE_FUNC.GET_DATA_MAS_RHGROUP(MODEL_APP)
+                            MODEL_APP.List_MAS_ELEMENTAL = CORE_FUNC.GET_DATA_MAS_ELEMENTAL(MODEL_APP)
+                            MODEL_APP.List_MAS_RACE = CORE_FUNC.GET_DATA_MAS_RACE(MODEL_APP)
+                            MODEL_APP.List_MAS_RELIGION = CORE_FUNC.GET_DATA_MAS_RELIGION(MODEL_APP)
+                            MODEL_APP.List_MAS_OCCUPATION = CORE_FUNC.GET_DATA_MAS_OCCUPATION(MODEL_APP)
+                            MODEL_APP.List_MAS_EDUCATIONLEVEL = CORE_FUNC.GET_DATA_MAS_EDUCATIONLEVEL(MODEL_APP)
+                            MODEL_APP.List_MAS_VSTATUS = CORE_FUNC.GET_DATA_MAS_VSTATUS(MODEL_APP)
+                            MODEL_APP.List_MAS_STATUS = CORE_FUNC.GET_DATA_MAS_STATUS(MODEL_APP)
+                            MODEL_APP.List_MAS_RELATIONSHIP = CORE_FUNC.GET_DATA_MAS_RELATIONSHIP(MODEL_APP)
                         Case "FUNC-INFOR-001-4"
                             MODEL_APP.List_MAS_AMPHUR = CORE_FUNC.GET_DATA_MAS_AMPHUR(MODEL_APP)
                         Case "FUNC-INFOR-001-5"
                             MODEL_APP.List_MAS_DISTRICT = CORE_FUNC.GET_DATA_MAS_DISTRICT(MODEL_APP)
+                        Case "FUNC-INSERT_INFOR-001"
+                            MODEL_APP = CORE_FUNC.INSERT_INFOR_ADD(MODEL_APP)
                         Case "FUNC-INFOR-002-1"
                             CORE_FUNC.INSERT_MEDICAL_CLAIM(MODEL_APP)
-                        Case "FUNC-INFOR-002-2"
-                            CORE_FUNC.INSERT_MEDICAL_ADDRESS(MODEL_APP)
+                        'Case "FUNC-INFOR-002-2"
+                        '    CORE_FUNC.INSERT_MEDICAL_ADDRESS(MODEL_APP)
                         Case "FUNC-INFOR-003-1"
                             MODEL_APP.List_ORGANIZATION = CORE_FUNC.GET_DATA_SERCH_MAS_ORGANIZATION_HOS(MODEL_APP.SERCHWORD)
                             '''''''''''''''''''''''''''''''''''''''''''''''' GET_MANAGE_MASTER  ''''''''''''''''''''''''''''''''''''''''''''''
